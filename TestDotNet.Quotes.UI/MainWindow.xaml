@@ -1,0 +1,23 @@
+﻿<Window x:Class="TestDotNet.Quotes.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DataGrid AutoGenerateColumns="true" Height="200" HorizontalAlignment="Stretch" Margin="12,41,12,0" Name="quotes" VerticalAlignment="Top" LoadingRow="quotes_LoadingRow" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="54,12,0,0" Name="host" VerticalAlignment="Top" Width="120" DataContext="{Binding}" Text="127.0.0.1" />
+        <Label Content="Host:" Height="28" HorizontalAlignment="Left" Margin="12,10,0,0" Name="label1" VerticalAlignment="Top" Width="48" />
+        <Label Content="Object:" Height="28" HorizontalAlignment="Left" Margin="230,10,0,0" Name="label2" VerticalAlignment="Top" Width="63" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="290,12,0,0" Name="objectName" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="PETR4" />
+            <ComboBoxItem Content="EURUSD" />
+            <ComboBoxItem Content="BBDC4" />
+            <ComboBoxItem Content="IBOV" />
+            <ComboBoxItem Content="ITAU4" />
+            <ComboBoxItem Content="VALE5" />
+            <ComboBoxItem Content="FFTL4" />
+        </ComboBox>
+        <Button Content="Get" Height="23" HorizontalAlignment="Right" Margin="0,12,12,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+        <Label Content=":" Height="28" HorizontalAlignment="Left" Margin="172,11,0,0" Name="label3" VerticalAlignment="Top" Width="15" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="180,12,0,0" Name="port" VerticalAlignment="Top" Width="44" />
+    </Grid>
+</Window>
