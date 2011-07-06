@@ -108,5 +108,10 @@ namespace TestDotNet.Quotes.UI
             e.Row.Background = new SolidColorBrush(backgroundColor);
             e.Row.Foreground = new SolidColorBrush(foregroundColor);
         }
+
+        ~MainWindow()
+        {
+            DisconnectAndLogout();
+        }
     }
 }
