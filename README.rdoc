@@ -1,0 +1,5 @@
+== TestDotNet.Quotes
+It's a test app for TechForTI.
+
+== Instructions
+To run the tests and app, first you have to run packages/ClientAPI/Server.exe.
